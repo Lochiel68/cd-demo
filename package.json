@@ -1,6 +1,7 @@
 {
   "name": "cd-demo",
   "private": true,
+  “homepage”: “http://<Lochiel68>.github.io/cd-demo”
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,7 +10,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest"
-  },
+    “predeploy”: “npm run build”,
+    “deploy”: “gh-pages -d dist”
+  }
   "dependencies": {
     "gh-pages": "^6.3.0",
     "react": "^18.3.1",
